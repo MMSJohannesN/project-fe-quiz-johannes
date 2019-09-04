@@ -35,14 +35,19 @@ body {
     
 }
 
+.general #answer1:active, #answer2:active, #answer3:active, #answer4:active,
+.general #answer1:focus, #answer2:focus, #answer3:focus, #answer4:focus {
+    border:0.5em solid #00c;
+}
+
 .general #nextbutton {
     border: 1px solid black;
     padding: 10px 125px;
     margin: 150px 0px 0px /*1550px*/;
 }
 
-#nextbutton:active, 
-#nextbutton:focus 
-{
-    border:0.5em solid #00c;
- }
+table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
