@@ -7,10 +7,13 @@ document.getElementById("answer1").innerHTML = fragerunde[0].answer1;
 document.getElementById("answer2").innerHTML = fragerunde[0].answer2;
 document.getElementById("answer3").innerHTML = fragerunde[0].answer3;
 document.getElementById("answer4").innerHTML = fragerunde[0].answer4;
+document.getElementById("counter").innerHTML = "Question 1/10";
+
 
 // Alle anderen Fragen bei klick auf den "nächste Frage - Button"
 let nextbutton = document.getElementById("nextbutton");
 let fragenrundenummer = 1;
+
 nextbutton.onclick = function() {
 
     fragenrundenummer += 1;
@@ -25,6 +28,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[1].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[1].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 2/10";
     } else if (fragenrundenummer === 3 && chosenAnswer !== "AAAAA") {
         //Dritte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[2].question;
@@ -34,6 +38,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[2].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[2].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 3/10";
     } else if (fragenrundenummer === 4 && chosenAnswer !== "AAAAA") {
         //Vierte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[3].question;
@@ -43,6 +48,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[3].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[3].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 4/10";
     } else if (fragenrundenummer === 5 && chosenAnswer !== "AAAAA") {
         //Fünfte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[4].question;
@@ -52,6 +58,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[4].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[4].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 5/10";
     } else if (fragenrundenummer === 6 && chosenAnswer !== "AAAAA") {
         //Sechste Quizfrage
         document.getElementById("question").innerHTML = fragerunde[5].question;
@@ -61,6 +68,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[5].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[5].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 6/10";
     } else if (fragenrundenummer === 7 && chosenAnswer !== "AAAAA") {
         //Siebte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[6].question;
@@ -70,6 +78,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[6].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[6].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 7/10";
     } else if (fragenrundenummer === 8 && chosenAnswer !== "AAAAA") {
         //Achte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[7].question;
@@ -79,6 +88,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[7].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[7].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 8/10";
     } else if (fragenrundenummer === 9 && chosenAnswer !== "AAAAA") {
         //Neunte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[8].question;
@@ -88,6 +98,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[8].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[8].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 9/10";
     } else if (fragenrundenummer === 10 && chosenAnswer !== "AAAAA") {
         //Zehnte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[9].question;
@@ -97,25 +108,36 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[9].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[9].answer4;
         chosenAnswer = "AAAAA";
+        document.getElementById("counter").innerHTML = "Question 10/10";
     } else if (fragenrundenummer > 10 && chosenAnswer !== "AAAAA") {
+        
+        document.getElementById("myTbody").style.border = "1px solid black";
+
+        document.getElementById("myTr1").style.padding = "1px solid black";
+        document.getElementById("myTr2").style.padding = "1px solid black";
 
         answer1.parentNode.removeChild(answer1);
         answer2.parentNode.removeChild(answer2);
         answer3.parentNode.removeChild(answer3);
         answer4.parentNode.removeChild(answer4);
         nextbutton.parentNode.removeChild(nextbutton);
+        counter.parentNode.removeChild(counter);
 
         document.getElementById("question").innerHTML = "Your results:";
+        document.getElementById("question").style.textDecoration = "underline";
         // TH
         let th = document.getElementById("myTh1");
         let thText = document.createTextNode("Your result is:");
         th.appendChild(thText);
+        document.getElementById("myTh1").style.padding = "0 25px 0 25px";
         th = document.getElementById("myTh2");
         thText = document.createTextNode("Your choice was:");
         th.appendChild(thText);
+        document.getElementById("myTh2").style.padding = "0 25px 0 25px";
         th = document.getElementById("myTh3");
         thText = document.createTextNode("The solution is:");
         th.appendChild(thText);
+        document.getElementById("myTh3").style.padding = "0 25px 0 25px";
         // TB
         let falsch = 0;
         let booleanResult = fragerunde[0].chosen === fragerunde[0].result;
@@ -281,20 +303,21 @@ nextbutton.onclick = function() {
 
         let output = 10 - falsch;
         let paragraph = document.getElementById("paragraph");
+        document.getElementById("paragraph").style.paddingTop = "25px";
         let paragraphText = document.createTextNode(`You had ${output} answers right!`);
         paragraph.appendChild(paragraphText);
 
         if (output <= 3) {
             let div1 = document.getElementById("div1");
-            let div1Text = document.createTextNode("You were very bad :D");
+            let div1Text = document.createTextNode("You are very bad :D");
             div1.appendChild(div1Text);
         } else if (output <= 7) {
             div1 = document.getElementById("div1");
-            div1Text = document.createTextNode("You were not good bad also not bad :P");
+            div1Text = document.createTextNode("Not bad.. but there is still a room for improvement :P");
             div1.appendChild(div1Text);
         } else if (output <= 9){
             div1 = document.getElementById("div1");
-            div1Text = document.createTextNode("You are very good!");
+            div1Text = document.createTextNode("Nice, good job!");
             div1.appendChild(div1Text);
         } else {
             div1 = document.getElementById("div1");
@@ -303,7 +326,7 @@ nextbutton.onclick = function() {
         }
         chosenAnswer = "AAAAA";
    } else {
-    alert("You have to chose a value!");
+    alert("You have to choose a value!");
     fragenrundenummer -= 1;
    }
 }

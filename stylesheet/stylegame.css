@@ -1,13 +1,17 @@
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     margin: 0 auto;
 }
 
-body {
-    background-size: cover;
+#counter {
+    font-size: 0.6rem;
+}
+
+#question {
+font-size: 1.5rem;
 }
 
 .general  {
@@ -33,31 +37,44 @@ body {
 .general #answer1, #answer2, #answer3, #answer4 {
     border: 1px solid black;
     padding: 10px 125px;
-    
+    width: auto;
+    height: auto;
 }
 
 .general #answer1:active, #answer2:active, #answer3:active, #answer4:active,
 .general #answer1:focus, #answer2:focus, #answer3:focus, #answer4:focus {
-    border:0.5em solid #00c;
+    border: 0.3em solid rgb(0, 159, 227);
+    background-color: rgb(227, 6, 19);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.general #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #nextbutton:hover {
+    cursor: pointer;
 }
 
 .general #nextbutton {
     border: 1px solid black;
     padding: 10px 125px;
-    margin: 150px 0px 0px /*1550px*/;
+    margin-top: 150px;
 }
+
+.general #answer1, #answer2, #answer3, #answer4, #nextbutton {
+    background-color: rgb(48, 65, 105);
+    color: white;
+    font-size: 0.6rem;
+}
+
 
 table {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-bottom: 30px;
 }
 
-tbody, th, td {
-    border: 1px solid black;
-}
+/*
+color: rgb(0, 159, 227); blau
+color: rgb(227, 6, 19); rot
+*/
 
-th, td {
-    padding: 0 20px 0 20px;
-}
