@@ -51,6 +51,7 @@ table {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 tbody, th, td {
@@ -59,8 +60,4 @@ tbody, th, td {
 
 th, td {
     padding: 0 20px 0 20px;
-}
-
-table {
-    padding-bottom: 30px;
 }
