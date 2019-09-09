@@ -119,7 +119,12 @@ nextbutton.onclick = function() {
         // TB
         let falsch = 0;
         let booleanResult = fragerunde[0].chosen === fragerunde[0].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd1").style.color = "red";
+        } else {
+            document.getElementById("myTd1").style.color = "LawnGreen";
+        }
         let td = document.getElementById("myTd1");
         let tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -130,7 +135,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[0].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[1].chosen === fragerunde[1].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd4").style.color = "red";
+        } else {
+            document.getElementById("myTd4").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd4");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -141,7 +151,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[1].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[2].chosen === fragerunde[2].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd7").style.color = "red";
+        } else {
+            document.getElementById("myTd7").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd7");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -152,7 +167,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[2].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[3].chosen === fragerunde[3].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd10").style.color = "red";
+        } else {
+            document.getElementById("myTd10").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd10");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -163,7 +183,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[3].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[4].chosen === fragerunde[4].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd13").style.color = "red";
+        } else {
+            document.getElementById("myTd13").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd13");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -174,7 +199,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[4].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[5].chosen === fragerunde[5].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd16").style.color = "red";
+        } else {
+            document.getElementById("myTd16").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd16");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -185,7 +215,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[5].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[6].chosen === fragerunde[6].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd19").style.color = "red";
+        } else {
+            document.getElementById("myTd19").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd19");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -196,7 +231,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[6].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[7].chosen === fragerunde[7].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd22").style.color = "red";
+        } else {
+            document.getElementById("myTd22").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd22");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -207,7 +247,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[7].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[8].chosen === fragerunde[8].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd25").style.color = "red";
+        } else {
+            document.getElementById("myTd25").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd25");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -218,7 +263,12 @@ nextbutton.onclick = function() {
         tdText = document.createTextNode(fragerunde[8].result);
         td.appendChild(tdText);
         booleanResult = fragerunde[9].chosen === fragerunde[9].result;
-        if (booleanResult === false) {falsch += 1}
+        if (booleanResult === false) {
+            falsch += 1; 
+            document.getElementById("myTd28").style.color = "red";
+        } else {
+            document.getElementById("myTd28").style.color = "LawnGreen";
+        }
         td = document.getElementById("myTd28");
         tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
@@ -291,19 +341,6 @@ answer4.onclick = function getValue() {
     chosenAnswer = fragerunde[i].answer4;
     fragerunde[i].chosen = chosenAnswer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

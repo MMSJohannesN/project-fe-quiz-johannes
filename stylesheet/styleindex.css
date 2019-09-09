@@ -1,53 +1,22 @@
 :root {
+    background-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 1.5rem;
     color: black;
+    margin: 0 auto;
 }
 
-body {
+.start {
+    border: 1px solid black;  
+    font-size: 0.9em;
+    padding: 20px;
+}
+
+h5 {
+    margin-top: 250px;
+}
+
+img {
     background-size: cover;
-}
-
-.general  {
-    border: 1px solid black;
-    padding: 10px 0;
-    margin-top: 0px;
-}
-
-.general .questionsArea {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 0px 6px;
-}
-
-.general .answersArea {
-    
-    padding: 10px;
-    margin: 0px 6px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.general #answer1, #answer2, #answer3, #answer4 {
-    border: 1px solid black;
-    padding: 10px 125px;
-    
-}
-
-.general #answer1:active, #answer2:active, #answer3:active, #answer4:active,
-.general #answer1:focus, #answer2:focus, #answer3:focus, #answer4:focus {
-    border:0.5em solid #00c;
-}
-
-.general #nextbutton {
-    border: 1px solid black;
-    padding: 10px 125px;
-    margin: 150px 0px 0px /*1550px*/;
-}
-
-table {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
