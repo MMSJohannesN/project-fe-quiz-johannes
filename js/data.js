@@ -55,18 +55,18 @@ let fragerunde = [
     chosen: ""
 },
 {
-    question: "Which rating does MediaMarktSaturn have as an employer at Kanunu?",
-    answer1: "4.15 stars",
-    answer2: "2.55 stars",
-    answer3: "4,85 stars",
-    answer4: "3.35 stars",
-    result: "3.35 stars",
+    question: "What are the names of our customer relationship program´s?",
+    answer1: "Media-Markt Card and Saturn Card",
+    answer2: "Media-Markt Card and Saturn Club",
+    answer3: "Media-Markt Club and Saturn Club",
+    answer4: "Media-Markt Club and Saturn Card",
+    result: "Media-Markt Club and Saturn Card",
     chosen: ""
 },
 {
     question: "What are the names of the MMS-brands?",
-    answer1: "PEAQ, OK., ROCKET and ASUS",
-    answer2: "OK., NOKIA, BENQ and ASUS",
+    answer1: "PEAQ, OK., ROCCAT and SPRIVA",
+    answer2: "OK., NOKIA, BENQ and ROCCAT",
     answer3: "OK., PEAQ, ISY and KOENIC",
     answer4: "KOENIC, ISY, BENQ and PEAQ",
     result: "OK., PEAQ, ISY and KOENIC",
@@ -75,19 +75,20 @@ let fragerunde = [
 {
     question: "What is the position of Martin Wild in our company?",
     answer1: "Chief Innovation Officer",
-    answer2: "Cief Technology Officer",
+    answer2: "Chief Technology Officer",
     answer3: "Chief Executive Officer",
     answer4: "Chief Sales Officer",
     result: "Chief Innovation Officer",
     chosen: ""
 },
 {
-    question: "Did you like this quiz?",
-    answer1: "Yes",
-    answer2: "Yes",
-    answer3: "Yes",
-    answer4: "No, sorry",
-    result: "Yes",
+    
+    question: "How many MediaMarkt and Saturn stores MMS have?",
+    answer1: "MM: 867 stores and SE: 173 stores",
+    answer2: "MM: 728 stores and SE: 271 stores",
+    answer3: "MM: 901 stores and SE: 89 stores",
+    answer4: "MM: 832 stores and SE: 134 stores",
+    result: "MM: 867 stores and SE: 173 stores",
     chosen: ""
 },
 ]

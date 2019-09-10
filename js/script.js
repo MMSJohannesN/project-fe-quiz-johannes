@@ -136,7 +136,7 @@ nextbutton.onclick = function() {
         th.appendChild(thText);
         document.getElementById("myTh2").style.textDecoration = "underline";
         document.getElementById("myTh2").style.color = "rgb(0, 159, 227)";
-        document.getElementById("myTh2").style.padding = "0 150px 0 150px";
+        document.getElementById("myTh2").style.padding = "0 200px 0 200px";
         th = document.getElementById("myTh3");
         thText = document.createTextNode("The solution is:");
         th.appendChild(thText);
@@ -330,6 +330,15 @@ nextbutton.onclick = function() {
             div1.appendChild(div1Text);
         }
         chosenAnswer = "AAAAA";
+
+        let playagain = document.getElementById("myAnchor");
+        document.getElementById("playagain").style.margin = "50px 600px 0 600px";
+        document.getElementById("playagain").style.padding = "10px 0";
+        let playagainText = document.createTextNode("Play again!");
+        playagain.appendChild(playagainText);
+        document.getElementById("myAnchor").style.textDecoration = "none";
+        document.getElementById("myAnchor").style.color = "white";
+
    } else {
     alert("You have to choose a value!");
     fragenrundenummer -= 1;
