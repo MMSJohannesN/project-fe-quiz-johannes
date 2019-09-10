@@ -54,16 +54,19 @@ font-size: 1.5rem;
     cursor: pointer;
 }
 
+.general #answer1, #answer2, #answer3, #answer4 {
+    background-color: rgb(61, 82, 129);
+    color: white;
+    font-size: 0.6rem;
+}
+
 .general #nextbutton {
     border: 1px solid black;
     padding: 10px 125px;
     margin-top: 150px;
-}
-
-.general #answer1, #answer2, #answer3, #answer4, #nextbutton {
-    background-color: rgb(48, 65, 105);
     color: white;
     font-size: 0.6rem;
+    background-color: rgb(57, 62, 73);
 }
 
 
@@ -77,4 +80,3 @@ table {
 color: rgb(0, 159, 227); blau
 color: rgb(227, 6, 19); rot
 */
-

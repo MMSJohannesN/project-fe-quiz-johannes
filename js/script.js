@@ -22,7 +22,7 @@ nextbutton.onclick = function() {
         //Zweite Quizfrage
 
         document.getElementById("question").innerHTML = fragerunde[1].question;
-        
+
         document.getElementById("answer1").innerHTML = fragerunde[1].answer1;
         document.getElementById("answer2").innerHTML = fragerunde[1].answer2;
         document.getElementById("answer3").innerHTML = fragerunde[1].answer3;
@@ -112,9 +112,7 @@ nextbutton.onclick = function() {
     } else if (fragenrundenummer > 10 && chosenAnswer !== "AAAAA") {
         
         document.getElementById("myTbody").style.border = "1px solid black";
-
-        document.getElementById("myTr1").style.padding = "1px solid black";
-        document.getElementById("myTr2").style.padding = "1px solid black";
+        document.getElementById("myTbody").style.padding = "5px 15px 5px 15px";
 
         answer1.parentNode.removeChild(answer1);
         answer2.parentNode.removeChild(answer2);
@@ -125,19 +123,26 @@ nextbutton.onclick = function() {
 
         document.getElementById("question").innerHTML = "Your results:";
         document.getElementById("question").style.textDecoration = "underline";
+        document.getElementById("question").style.color = "rgb(227, 6, 19)";
         // TH
         let th = document.getElementById("myTh1");
         let thText = document.createTextNode("Your result is:");
         th.appendChild(thText);
-        document.getElementById("myTh1").style.padding = "0 25px 0 25px";
+        document.getElementById("myTh1").style.textDecoration = "underline";
+        document.getElementById("myTh1").style.color = "rgb(0, 159, 227)";
+        document.getElementById("myTh1").style.padding = "0 0 0 0";
         th = document.getElementById("myTh2");
         thText = document.createTextNode("Your choice was:");
         th.appendChild(thText);
-        document.getElementById("myTh2").style.padding = "0 25px 0 25px";
+        document.getElementById("myTh2").style.textDecoration = "underline";
+        document.getElementById("myTh2").style.color = "rgb(0, 159, 227)";
+        document.getElementById("myTh2").style.padding = "0 150px 0 150px";
         th = document.getElementById("myTh3");
         thText = document.createTextNode("The solution is:");
         th.appendChild(thText);
-        document.getElementById("myTh3").style.padding = "0 25px 0 25px";
+        document.getElementById("myTh3").style.textDecoration = "underline";
+        document.getElementById("myTh3").style.color = "rgb(0, 159, 227)";
+        document.getElementById("myTh3").style.padding = "0 0 0 0";
         // TB
         let falsch = 0;
         let booleanResult = fragerunde[0].chosen === fragerunde[0].result;
@@ -313,7 +318,7 @@ nextbutton.onclick = function() {
             div1.appendChild(div1Text);
         } else if (output <= 7) {
             div1 = document.getElementById("div1");
-            div1Text = document.createTextNode("Not bad.. but there is still a room for improvement :P");
+            div1Text = document.createTextNode("Not bad.. but there is still a room for improvements :P");
             div1.appendChild(div1Text);
         } else if (output <= 9){
             div1 = document.getElementById("div1");
@@ -369,11 +374,8 @@ answer4.onclick = function getValue() {
 
 
 
-
-
 /*
-//--------------> Marco´s thing.. don´t know what it is...
-// everything with classes.. beginning
+// Marco´s class setup -> everything with classes... but just the beginning
 class Frage {
     constructor() {
         this.question = question;
