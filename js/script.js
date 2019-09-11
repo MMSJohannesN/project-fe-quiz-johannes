@@ -28,7 +28,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[1].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[1].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 2/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 3 && chosenAnswer !== "AAAAA") {
         //Dritte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[2].question;
@@ -38,7 +38,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[2].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[2].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 3/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 4 && chosenAnswer !== "AAAAA") {
         //Vierte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[3].question;
@@ -48,7 +48,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[3].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[3].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 4/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 5 && chosenAnswer !== "AAAAA") {
         //Fünfte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[4].question;
@@ -58,7 +58,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[4].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[4].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 5/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 6 && chosenAnswer !== "AAAAA") {
         //Sechste Quizfrage
         document.getElementById("question").innerHTML = fragerunde[5].question;
@@ -68,7 +68,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[5].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[5].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 6/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 7 && chosenAnswer !== "AAAAA") {
         //Siebte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[6].question;
@@ -78,7 +78,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[6].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[6].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 7/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 8 && chosenAnswer !== "AAAAA") {
         //Achte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[7].question;
@@ -88,7 +88,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[7].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[7].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 8/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 9 && chosenAnswer !== "AAAAA") {
         //Neunte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[8].question;
@@ -98,7 +98,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[8].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[8].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 9/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer === 10 && chosenAnswer !== "AAAAA") {
         //Zehnte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[9].question;
@@ -108,7 +108,7 @@ nextbutton.onclick = function() {
         document.getElementById("answer3").innerHTML = fragerunde[9].answer3;
         document.getElementById("answer4").innerHTML = fragerunde[9].answer4;
         chosenAnswer = "AAAAA";
-        document.getElementById("counter").innerHTML = "Question 10/10";
+        document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
     } else if (fragenrundenummer > 10 && chosenAnswer !== "AAAAA") {
         
         document.getElementById("myTbody").style.border = "1px solid black";
