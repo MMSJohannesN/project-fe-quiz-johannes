@@ -27,15 +27,7 @@ color: rgb(227, 6, 19);
     margin: 0px 6px;
 }
 
-.general .answersArea {
-    
-    padding: 10px;
-    margin: 0px 6px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.general #answer1, #answer2, #answer3, #answer4 {
+.btn {
     border: 1px solid black;
     padding: 10px 125px;
     width: auto;
@@ -45,8 +37,19 @@ color: rgb(227, 6, 19);
     font-size: 0.6rem;
 }
 
-.general #answer1:active, #answer2:active, #answer3:active, #answer4:active,
-.general #answer1:focus, #answer2:focus, #answer3:focus, #answer4:focus {
+.btn:hover {
+    cursor: pointer;
+}
+
+.general .answersArea {
+    
+    padding: 10px;
+    margin: 0px 6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clicked, .btn:hover {
     border: 0.3em solid rgb(72, 73, 73);
     background-color: rgb(227, 6, 19);
     color: white;
@@ -54,9 +57,10 @@ color: rgb(227, 6, 19);
     font-weight: bold;
 }
 
-.general #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #nextbutton:hover {
+.general #nextbutton:hover {
     cursor: pointer;
 }
+
 
 .general #nextbutton {
     border: 1px solid black;

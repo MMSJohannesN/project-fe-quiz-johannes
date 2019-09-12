@@ -29,6 +29,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[1].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 3 && chosenAnswer !== "AAAAA") {
         //Dritte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[2].question;
@@ -39,6 +43,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[2].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 4 && chosenAnswer !== "AAAAA") {
         //Vierte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[3].question;
@@ -49,6 +57,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[3].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 5 && chosenAnswer !== "AAAAA") {
         //Fünfte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[4].question;
@@ -59,6 +71,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[4].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 6 && chosenAnswer !== "AAAAA") {
         //Sechste Quizfrage
         document.getElementById("question").innerHTML = fragerunde[5].question;
@@ -69,6 +85,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[5].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 7 && chosenAnswer !== "AAAAA") {
         //Siebte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[6].question;
@@ -79,6 +99,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[6].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 8 && chosenAnswer !== "AAAAA") {
         //Achte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[7].question;
@@ -89,6 +113,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[7].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 9 && chosenAnswer !== "AAAAA") {
         //Neunte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[8].question;
@@ -99,6 +127,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[8].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer === 10 && chosenAnswer !== "AAAAA") {
         //Zehnte Quizfrage
         document.getElementById("question").innerHTML = fragerunde[9].question;
@@ -109,6 +141,10 @@ nextbutton.onclick = function() {
         document.getElementById("answer4").innerHTML = fragerunde[9].answer4;
         chosenAnswer = "AAAAA";
         document.getElementById("counter").innerHTML = `Question ${fragenrundenummer}/10`;
+        answer1.className = "btn";
+        answer2.className = "btn";
+        answer3.className = "btn";
+        answer4.className = "btn";
     } else if (fragenrundenummer > 10 && chosenAnswer !== "AAAAA") {
         
         document.getElementById("myTbody").style.border = "1px solid black";
@@ -347,32 +383,44 @@ nextbutton.onclick = function() {
 
 let chosenAnswer = "AAAAA";
 // Get Value and match it if it´s right or wrong and save it in the background
-answer1Chosen = document.getElementById('answer1');
 answer1.onclick = function getValue() {
+    answer1.className += " clicked";
+    answer2.className = "btn";
+    answer3.className = "btn";
+    answer4.className = "btn";
     let i = fragenrundenummer -1;
     document.getElementById("answer1").value = fragerunde[i].answer1;
     chosenAnswer = fragerunde[i].answer1;
     fragerunde[i].chosen = chosenAnswer;
 }
 
-answer2Chosen = document.getElementById('answer2');
 answer2.onclick = function getValue() {
+    answer2.className += " clicked";
+    answer1.className = "btn";
+    answer3.className = "btn";
+    answer4.className = "btn";
     let i = fragenrundenummer -1;
     document.getElementById("answer2").value = fragerunde[i].answer2;
     chosenAnswer = fragerunde[i].answer2;
     fragerunde[i].chosen = chosenAnswer;
 }
 
-answer3Chosen = document.getElementById('answer3');
 answer3.onclick = function getValue() {
+    answer3.className += " clicked";
+    answer2.className = "btn";
+    answer1.className = "btn";
+    answer4.className = "btn";
     let i = fragenrundenummer -1;
     document.getElementById("answer3").value = fragerunde[i].answer3;
     chosenAnswer = fragerunde[i].answer3;
     fragerunde[i].chosen = chosenAnswer;
 }
 
-answer4Chosen = document.getElementById('answer4');
 answer4.onclick = function getValue() {
+    answer4.className += " clicked";
+    answer2.className = "btn";
+    answer3.className = "btn";
+    answer1.className = "btn";
     let i = fragenrundenummer -1;
     document.getElementById("answer4").value = fragerunde[i].answer4;
     chosenAnswer = fragerunde[i].answer4;
