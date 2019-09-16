@@ -161,8 +161,14 @@ nextbutton.onclick = function() {
         document.getElementById("question").style.textDecoration = "underline";
         document.getElementById("question").style.color = "rgb(227, 6, 19)";
         // TH
-        let th = document.getElementById("myTh1");
-        let thText = document.createTextNode("Your result is:");
+        let th = document.getElementById("myTh05");
+        let thText = document.createTextNode("Question:");
+        th.appendChild(thText);
+        document.getElementById("myTh05").style.textDecoration = "underline";
+        document.getElementById("myTh05").style.color = "rgb(0, 159, 227)";
+        document.getElementById("myTh05").style.padding = "0 100px 0 100px";
+        th = document.getElementById("myTh1");
+        thText = document.createTextNode("Your result is:");
         th.appendChild(thText);
         document.getElementById("myTh1").style.textDecoration = "underline";
         document.getElementById("myTh1").style.color = "rgb(0, 159, 227)";
@@ -181,6 +187,10 @@ nextbutton.onclick = function() {
         document.getElementById("myTh3").style.padding = "0 0 0 0";
         // TB
         let falsch = 0;
+
+        let td = document.getElementById("myTd01");
+        let tdText = document.createTextNode("1.");
+        td.appendChild(tdText);
         let booleanResult = fragerunde[0].chosen === fragerunde[0].result;
         if (booleanResult === false) {
             falsch += 1; 
@@ -188,14 +198,17 @@ nextbutton.onclick = function() {
         } else {
             document.getElementById("myTd1").style.color = "LawnGreen";
         }
-        let td = document.getElementById("myTd1");
-        let tdText = document.createTextNode(booleanResult);
+        td = document.getElementById("myTd1");
+        tdText = document.createTextNode(booleanResult);
         td.appendChild(tdText);
         td = document.getElementById("myTd2");
         tdText = document.createTextNode(fragerunde[0].chosen);
         td.appendChild(tdText);
         td = document.getElementById("myTd3");
         tdText = document.createTextNode(fragerunde[0].result);
+        td.appendChild(tdText);
+        td = document.getElementById("myTd04");
+        tdText = document.createTextNode("2.");
         td.appendChild(tdText);
         booleanResult = fragerunde[1].chosen === fragerunde[1].result;
         if (booleanResult === false) {
@@ -213,6 +226,9 @@ nextbutton.onclick = function() {
         td = document.getElementById("myTd6");
         tdText = document.createTextNode(fragerunde[1].result);
         td.appendChild(tdText);
+        td = document.getElementById("myTd07");
+        tdText = document.createTextNode("3.");
+        td.appendChild(tdText);
         booleanResult = fragerunde[2].chosen === fragerunde[2].result;
         if (booleanResult === false) {
             falsch += 1; 
@@ -228,6 +244,9 @@ nextbutton.onclick = function() {
         td.appendChild(tdText);
         td = document.getElementById("myTd9");
         tdText = document.createTextNode(fragerunde[2].result);
+        td.appendChild(tdText);
+        td = document.getElementById("myTd010");
+        tdText = document.createTextNode("4.");
         td.appendChild(tdText);
         booleanResult = fragerunde[3].chosen === fragerunde[3].result;
         if (booleanResult === false) {
@@ -245,6 +264,9 @@ nextbutton.onclick = function() {
         td = document.getElementById("myTd12");
         tdText = document.createTextNode(fragerunde[3].result);
         td.appendChild(tdText);
+        td = document.getElementById("myTd013");
+        tdText = document.createTextNode("5.");
+        td.appendChild(tdText);
         booleanResult = fragerunde[4].chosen === fragerunde[4].result;
         if (booleanResult === false) {
             falsch += 1; 
@@ -260,6 +282,9 @@ nextbutton.onclick = function() {
         td.appendChild(tdText);
         td = document.getElementById("myTd15");
         tdText = document.createTextNode(fragerunde[4].result);
+        td.appendChild(tdText);
+        td = document.getElementById("myTd016");
+        tdText = document.createTextNode("6.");
         td.appendChild(tdText);
         booleanResult = fragerunde[5].chosen === fragerunde[5].result;
         if (booleanResult === false) {
@@ -277,6 +302,9 @@ nextbutton.onclick = function() {
         td = document.getElementById("myTd18");
         tdText = document.createTextNode(fragerunde[5].result);
         td.appendChild(tdText);
+        td = document.getElementById("myTd019");
+        tdText = document.createTextNode("7.");
+        td.appendChild(tdText);
         booleanResult = fragerunde[6].chosen === fragerunde[6].result;
         if (booleanResult === false) {
             falsch += 1; 
@@ -292,6 +320,9 @@ nextbutton.onclick = function() {
         td.appendChild(tdText);
         td = document.getElementById("myTd21");
         tdText = document.createTextNode(fragerunde[6].result);
+        td.appendChild(tdText);
+        td = document.getElementById("myTd022");
+        tdText = document.createTextNode("8.");
         td.appendChild(tdText);
         booleanResult = fragerunde[7].chosen === fragerunde[7].result;
         if (booleanResult === false) {
@@ -309,6 +340,9 @@ nextbutton.onclick = function() {
         td = document.getElementById("myTd24");
         tdText = document.createTextNode(fragerunde[7].result);
         td.appendChild(tdText);
+        td = document.getElementById("myTd025");
+        tdText = document.createTextNode("9.");
+        td.appendChild(tdText);
         booleanResult = fragerunde[8].chosen === fragerunde[8].result;
         if (booleanResult === false) {
             falsch += 1; 
@@ -324,6 +358,9 @@ nextbutton.onclick = function() {
         td.appendChild(tdText);
         td = document.getElementById("myTd27");
         tdText = document.createTextNode(fragerunde[8].result);
+        td.appendChild(tdText);
+        td = document.getElementById("myTd028");
+        tdText = document.createTextNode("10.");
         td.appendChild(tdText);
         booleanResult = fragerunde[9].chosen === fragerunde[9].result;
         if (booleanResult === false) {
